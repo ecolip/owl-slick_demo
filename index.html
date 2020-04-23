@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>slick</title>
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="owl-carousel container">
+		<div class="item">1<img src="https://dummyimage.com/300x300/eee/666" alt=""> </div>
+		<div class="item">2<img src="https://dummyimage.com/300x300/eee/666" alt=""> </div>
+		<div class="item">3<img src="https://dummyimage.com/300x300/eee/666" alt=""> </div>
+		<div class="item">4<img src="https://dummyimage.com/300x300/eee/666" alt=""> </div>
+		<div class="item">5<img src="https://dummyimage.com/300x300/eee/666" alt=""> </div>
+		<div class="item">6<img src="https://dummyimage.com/300x300/eee/666" alt=""> </div>
+		<div class="item"7><img src="https://dummyimage.com/300x300/eee/666" alt=""> </div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				loop:true,	/*Infinity loop*/
+				margin: 10,
+				nav: true,   /*控制列*/
+				items: 3, /* you want to see on the screen*/
+				autoplay: true, /**/
+				autoplayTimeout: 3000, /* 輪播速度*/
+			});
+		});
+	</script>
+
+</body>
+
+</html>
