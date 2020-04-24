@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>slick-2</title>
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main-2.css">
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="owl-carousel">
+		<div class="item">1<img src="https://dummyimage.com/542x542/eee/666" class="img-1" alt=""></div>
+		<div class="item">2<img src="https://dummyimage.com/240x308/eee/666" class="img-2" alt=""></div>
+		<div class="item">3<img src="https://dummyimage.com/384x308/eee/666" class="img-3" alt=""></div>
+		<div class="item">4<img src="https://dummyimage.com/640x220/eee/666" class="img-4" alt=""></div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				loop:true,	/*Infinity loop*/
+				margin: 10,
+				nav: true,   /*控制列*/
+				items: 4, /* you want to see on the screen*/
+				autoplay: true, /**/
+				autoplayTimeout: 3000, /* 輪播速度*/
+				responsive:{
+					0:{
+						items:1,
+					},
+					576:{
+						items:3,
+					},
+					768:{
+						items:4,
+					}
+    			}
+			});
+		});
+	</script>
+	
+</body>
+
+</html>
